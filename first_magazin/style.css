@@ -1,0 +1,284 @@
+html{
+	height:100%;
+}
+body{
+	/*position: relative;*/
+	margin: 0;
+	/*padding: 0;*/
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	background: #B3B7D0;
+	background-image: url(./img/background_1.jpg);
+	background-repeat: repeat-y;/* так хуже мне кажется */
+	background-size: 100%;
+	color: #030c4f;
+	/*height: 100%;*/
+}
+.layout-positioner{
+	width: 800px;
+	text-align: center;
+	margin:0 auto;
+	
+}
+.layout-positioner:after{
+	content: '';
+	clear:both;
+	display: table;
+}
+.header{
+	background: #B3B7D0; /*слегка темнее фона*/
+	margin-bottom: 10px;
+	color: white;
+	min-height: 30vh;
+}
+.header .layout-column{
+	min-height: 50px;
+}
+.header .layout-column-1{
+	float: left;
+	width: 200px;
+}
+.header .layout-column-2{
+	float: right;
+	width: 600px;
+}
+.features{
+	/*margin-bottom: 10px;*/
+  	min-height: calc(70vh - 60px);
+}
+.clr{
+	height: 100px ;
+}
+.features .layout-column{
+	float: left;;
+	width: 253px;
+	min-height: 100px;
+	margin-right: 20px;
+	background:rgba(236,240,241,0.9);
+}
+.features .layout-column:last-child{
+	margin-right:0;
+}
+.footer{
+	background: #868aa5; /*очень темнее фона*/
+	color:white;
+	border-top: 1px solid gray; /*временно для визуализации*/
+	/*position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;*/
+	height: 60px;
+}
+/*сетка кончилась*/
+.hidden{
+	display: block;
+}
+.logo{
+	padding: 10px;
+}
+.logo p{
+	margin: 0;
+}
+.menu{
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+}
+.menu li{
+	padding: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+	background: #9196ba; /*гораздо темнее фона*/
+	border-radius: 5px;
+}
+.feature{
+	padding: 10px;
+	text-align: center;
+	height: 100%;
+}
+.footer-logo{
+	padding: 10px;
+	text-align: center;
+}
+.feature img{
+	max-width: 235px;
+	max-height: 149px;
+}
+h1, h2, h3, h4{
+	text-align: center;
+	color: black;
+}
+h2 h3 h4{
+	font-weight: 400;
+	background: #eaeaea;
+}
+h2{
+	font-size: 18px;
+}
+h3{
+	font-size: 16px;
+	
+}
+h4{
+	font-size: 14px;
+}
+.logo img{
+	max-height: 120px;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+.header a:hover{
+	color: #fff;
+}
+.hidden>a:hover{
+	color: grey;
+}
+.menu li{
+	display: inline-block;
+	height: 25px;
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+/*Костыль для карточек товара СТАРТ*/
+.content_goodcard{
+	margin: 0 auto;
+	width: 800px;
+}
+/*Костыль для карточек товара ФИНИШ*/
+/*start-good-card*/
+.good_card__main{
+	min-height: 300px;
+	border: 3px solid blue;
+}
+.good_card__main___photo{
+	float:left;
+	width: 300px;
+}
+.good_card__main___details{
+	margin-left: 300px;
+	padding-left: 20px;
+	border: 3px solid green;
+	background: #CFCCE1;
+	border-radius: 5px;
+}
+.good_card__main___details____features_____row1______price p{
+	font-size: 24px;
+	font-weight: 600;
+	color: red; 
+}
+.good_card__main___details____features_____row1______buy input[type="number"]{
+	width: 35px;
+}
+.good_card__main___details____features_____row1______buy input[type="submit"]{
+	width: 90px;
+}
+.good_card__main___details____features_____row2______favorite, .good_card__main___details____features_____row2______compare{
+	display: inline-block;
+}
+/*старые стили карточки СТАРТ
+.about_good{
+	color: #707070;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+}
+.details{
+	color: #484343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+.specifications ul{
+	padding-left: 10px;
+	font-size: 14px;
+	font-weight: 500;
+	text-align: left;
+	font-style: italic;
+	color: #484343;
+	/*вот это я нашел без проблем, но они же по вертикали не встают :)
+	list-style-image: url(./img/list-style.jpg);
+	*/
+	/*list-style: none;
+	line-height: 36px;
+}
+.specifications ul li{
+	background: url(./img/list-style.jpg) no-repeat left center;
+	padding-left: 30px;
+}
+/*Старые стили карточки ФИНИШ*/
+/*end-good-card*/
+.contacts-form input[type="text"]{
+	width: 200px;
+	height: 20px;
+	color: #483D8B;
+	font-style: italic;
+	font-weight: 600;
+}
+.good_card img{
+	border: 2px solid #000000;
+	border-radius: 5px;
+}
+.changelog a{
+	color:red;
+	font-weight: 600;
+}
+.sub-menu{
+	display:none;
+}
+.tourism:hover .sub-menu{
+	display:block;
+}
+.clothes:hover .sub-menu{
+	display:block;
+}
+.equipment:hover .sub-menu{
+	display:block;
+}
+.text li{
+	text-align: left;
+	background: grey;
+	opacity: 0.8;
+}
+.text>h1~p{
+	font-weight: 600;
+	color: red;
+}
+.search form{
+	text-align: right;
+}
+.table {
+  display: table;
+  /*border: solid 3px red;*/
+  margin: 0 auto;
+}
+
+.table-cell-main {
+  display: table-cell;
+  width:32.33333%;
+  vertical-align: top;
+  padding-right: 5px;
+}
+.table-cell-main:last-child {
+	padding-right: 0;
+	}
+.table-cell span{
+	font-size: 16px;
+	font-weight: 600;
+}
+.table-cell img{
+	border: 1px solid gray;
+	border-radius: 5px;
+	width: 302px;
+}
+.table-cell a{
+	display: block;
+	padding: 5px;
+	background: #9196ba;
+	border-radius: 5px;
+	border: 3px solid #383d5b;
+	margin-bottom: 5px;
+}
