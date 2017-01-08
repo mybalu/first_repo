@@ -51,9 +51,16 @@ body{
 	font-weight: 400;
 	font-size: 1.2em;
 }
+.header__menu ul li a:hover{
+	color: orange;
+	background-color: #000;
+}
 .header__search{
 	float: right;
 	margin-top: 10px;
+}
+.content{
+	margin-top: 5px;
 }
 .footer{
 	background: #4B5A61;
@@ -61,4 +68,36 @@ body{
 	height: 60px;
 	text-align: center;
 	padding: 10px 0px;
+}
+.main-goods{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: space-around;
+	-moz-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+}
+.main-goods__item{
+	border: 3px solid #fff;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+.main-goods__item a{
+	text-decoration: none;
+	color: #000;
+	text-align: center;
+}
+.main-goods__item a:hover{
+	color: #ff7800;
+}
+.main-goods__item a img{
+	width: 250px;
+	padding: 0 3px;
 }
