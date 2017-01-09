@@ -69,7 +69,7 @@ body{
 	text-align: center;
 	padding: 10px 0px;
 }
-.main-goods{
+.main-goods, .main-goods-catalog{
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -97,7 +97,32 @@ body{
 .main-goods__item a:hover{
 	color: #ff7800;
 }
-.main-goods__item a img{
+.main-goods .main-goods__item a img{
 	width: 250px;
 	padding: 0 3px;
+}
+.main-goods-catalog .main-goods__item a img{
+	width: 230px;
+	padding: 0 3px;
+	float: left;
+}
+.price::after{
+	content: ' руб.';
+}
+.main-goods__item__details{
+	border: 3px solid gray;
+	float: right;
+	width: 165px;
+}
+.status{
+	background-color: green;
+	text-align: center;
+}
+.price{
+	color: red;
+	font-weight: 600;
+	text-align: center;
+}
+.basket form{
+	text-align: center;
 }
