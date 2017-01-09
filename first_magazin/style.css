@@ -101,8 +101,8 @@ body{
 	width: 250px;
 	padding: 0 3px;
 }
-.main-goods-catalog .main-goods__item a img{
-	width: 230px;
+.content .main-goods-catalog .main-goods__item a img{
+	width: 215px;
 	padding: 0 3px;
 	float: left;
 }
@@ -125,4 +125,7 @@ body{
 }
 .basket form{
 	text-align: center;
+}
+.main-goods-catalog .main-goods__item a img.good-card{
+	width: 550px;
 }
