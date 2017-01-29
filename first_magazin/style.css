@@ -151,3 +151,8 @@ body{
 	display: block;
 	clear: both;
 }
+.header:after{
+	content: '';
+	display: block;
+	clear: both;
+}
