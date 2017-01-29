@@ -129,3 +129,21 @@ body{
 .main-goods-catalog .main-goods__item a img.good-card{
 	width: 550px;
 }
+.back a{
+	background-color: green;
+	color: #ffffff;
+	font-weight: 600;
+	padding: 15px 25px;
+	margin: 5px;
+	float: left;
+	text-decoration: none;
+}
+.back a:hover{
+	background-color: #0b660b;
+	color: #ffffff;
+}
+.back:after{
+	content: '';
+	display: block;
+	clear: both;
+}
